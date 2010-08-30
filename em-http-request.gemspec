@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ilya Grigorik"]
-  s.date = %q{2010-08-16}
+  s.date = %q{2010-08-30}
   s.description = %q{EventMachine based, async HTTP Request interface}
   s.email = %q{ilya@igvita.com}
   s.extensions = ["ext/buffer/extconf.rb", "ext/http11_client/extconf.rb"]
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".gitignore",
+     "Changelog.md",
      "LICENSE",
      "README.md",
      "Rakefile",
@@ -65,18 +66,18 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{EventMachine based, async HTTP Request interface}
   s.test_files = [
-    "spec/hash_spec.rb",
-     "spec/helper.rb",
-     "spec/mock_spec.rb",
+    "spec/stallion.rb",
+     "spec/hash_spec.rb",
      "spec/multi_spec.rb",
-     "spec/request_spec.rb",
-     "spec/stallion.rb",
      "spec/stub_server.rb",
-     "examples/fetch.rb",
+     "spec/request_spec.rb",
+     "spec/mock_spec.rb",
+     "spec/helper.rb",
+     "examples/websocket-handler.rb",
+     "examples/websocket-server.rb",
      "examples/fibered-http.rb",
      "examples/oauth-tweet.rb",
-     "examples/websocket-handler.rb",
-     "examples/websocket-server.rb"
+     "examples/fetch.rb"
   ]
 
   if s.respond_to? :specification_version then
